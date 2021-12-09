@@ -8,6 +8,7 @@
 #include "sound.h"
 
 // Useful macros
+
 #define swap(a, b)            do { typeof(a) temp = a; a = b; b = temp; } while (0)
 #define sign(a, b)            (double) (a > b ? 1 : (b > a ? -1 : 0))
 
@@ -625,6 +626,7 @@ void renderGun(uint8_t gun_pos, double amount_jogging) {
 
   if (gun_pos > GUN_SHOT_POS - 2) {
     // Gun fire
+    
     display.drawBitmap(x + 6, y - 11, bmp_fire_bits, BMP_FIRE_WIDTH, BMP_FIRE_HEIGHT, 1);
   }
 
@@ -756,10 +758,10 @@ void loopGamePlay() {
       // Update gun
       if (gun_pos > GUN_TARGET_POS) {
         // Right after fire
-        gun_pos -= 1;
+        gun_pos -= 8;
       } else if (gun_pos < GUN_TARGET_POS) {
         // Showing up
-        gun_pos += 2;
+        gun_pos += 1;
       } else if (!gun_fired && input_fire()) {
         // ready to fire and fire pressed
         gun_pos = GUN_SHOT_POS;
@@ -795,7 +797,7 @@ void loopGamePlay() {
     // Render stuff
     renderMap(sto_level_1, view_height);
     renderEntities(view_height);
-    renderGun(gun_pos, jogging);
+    renderGun(gun_pos, jogging * 0.5);
 
     // Fade in effect
     if (fade > 0) {
