@@ -1,5 +1,5 @@
-# doom-nano
-A 3d raycast engine for Arduino
+# Quakeduino
+A mod of a 3d raycast engine for Arduino
 
 ![](/images/screen-1.jpg?raw=true)
 
