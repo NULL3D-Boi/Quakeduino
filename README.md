@@ -1,7 +1,7 @@
 # Quakeduino
 A mod of a 3d raycast engine for Arduino
 
-![](/images/screen-1.jpg?raw=true)
+![](/images/screen-1.jpg)
 
 See it in action:
 - https://youtu.be/wJG04DSo7Xw (Progress on Feb, 09 2019)
