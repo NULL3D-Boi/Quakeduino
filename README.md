@@ -3,15 +3,9 @@ A mod of a 3d raycast engine for Arduino
 
 ![](/images/screen-1.jpg)
 
-See it in action:
-- https://youtu.be/wJG04DSo7Xw (Progress on Feb, 09 2019)
-- https://youtu.be/FX7PQtUAkHk (Progress on Jan, 18 2019)
+I liked the original project and for some reason I wanted it to be Quake.
 
-Just experimenting with an Arduino Nano I bought some time ago. This chip is very limited in process and memory: 16Mhz, only 32kb for program memory and 2kb of RAM, of which 1kb is entirely used for the screen.
-Most of problems I´m facing currently are about memory. CPU clock might be a problem too, but can be more or less avoided having more memory for calculation shortcuts.
-Despite of all those limitations it´s capable to run at up to 14 FPS. Probably can be optimized and structured much better. Will try to keep learning and improve it.
-
-To be clear. **This is not an actual Doom game**, just picked some sprites from it (and simplified a lot). The rendering engine is more like a Wolfeistein 3D. The Doom idea came because I started this building the fancy melt-screen effect (included in an early version, but not anymore).
+To be clear. **This is not an actual Quake game**, just picked some sprites from it (and simplified a lot). The rendering engine is more like a Wolfeistein 3D. The Quake idea came because I like Auake and I wanted to make it Quake.
 
 Hardware I used:
 - 2 mini breadboards
