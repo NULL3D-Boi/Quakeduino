@@ -28,7 +28,7 @@ constexpr uint8_t SOUND_PIN   = 9; // do not change, belongs to used timer
 #define Z_RES_DIVIDER       2           // Zbuffer resolution divider. We sacrifice resolution to save memory
 #define DISTANCE_MULTIPLIER 20          // Distances are stored as uint8_t, multiplying the distance we can obtain more precision taking care
                                         // of keep numbers inside the type range. Max is 256 / MAX_RENDER_DEPTH
-#define MAX_RENDER_DEPTH    12
+#define MAX_RENDER_DEPTH    16
 #define MAX_SPRITE_DEPTH    8
 
 #define ZBUFFER_SIZE        SCREEN_WIDTH / Z_RES_DIVIDER
@@ -47,8 +47,8 @@ constexpr uint8_t SOUND_PIN   = 9; // do not change, belongs to used timer
 #define GUN_TARGET_POS        18
 #define GUN_SHOT_POS          GUN_TARGET_POS + 4
 
-#define ROT_SPEED             .12
-#define MOV_SPEED             .2
+#define ROT_SPEED             .15
+#define MOV_SPEED             .3
 #define MOV_SPEED_INV         5           // 1 / MOV_SPEED
 
 #define JOGGING_SPEED         .005
@@ -69,7 +69,7 @@ constexpr uint8_t SOUND_PIN   = 9; // do not change, belongs to used timer
 
 #define ENEMY_MELEE_DAMAGE    8
 #define ENEMY_FIREBALL_DAMAGE 20
-#define GUN_MAX_DAMAGE        15
+#define GUN_MAX_DAMAGE        35
 
 // display
 constexpr uint8_t SCREEN_WIDTH     =  128;
