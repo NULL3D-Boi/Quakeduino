@@ -19,23 +19,12 @@ Resources:
 - Much thanks to https://lodev.org/cgtutor for so wonderful resource about raycasting engines
 
 Current status:
-- The map rendering is working nicely. Even I was able to add a depth effect by using different dithering patterns, depending on the distance to the view.
-- Sprites are working too, though has some issues hiding them behind walls because memory limitations (the z-buffer precision has been limited a lot to make it smaller).
-- You can move through the map, collide with walls, collect items and interact with enemies. I could also add the jogging effect, like Doom´s one.
-- The enemies AI, despite is very simple, I think works very well and it´s enough for the purpose of the game. Looks very similar to  Imp enemy from original Doom.
-- For the HUD, I realized that the native `print` from Adafruit's library uses too much memory. So I've implemented my custom text rendering methods and a custom font which includes only needed characters and some icons. 
-- ~~Currently I´m using 99% of program memory, which doesn´t let me adds more code. I need to research how to optimize it to make it smaller.~~
-- FPS and memory consumption has been improved using a slim and customized version of the SSD1306 lib from Adafruit. Thanks  [@miracoly](https://github.com/miracoli)
-- Now it has a basic sound support through Pin 9. Thanks again [@miracoly](https://github.com/miracoli)!
+- Basically just a skin with a few tweaked values
 
 (I'd like) To do:
-- ~~Make possible kill enemies.~~
-- Doors and locked doors.
-- A game over screen.
-- Add more sprites, decorative elements, etc.
-- Textures? Very performance expensive. I don't think so.
-- Make code looks nicer! Move all to pure c++.
-- ~~Sound/Music? Hmmm I wish so, but...~~ 
+-Try to add multiple levels
+-Try to add more guns
+-Try to add more enemies
 
 More screens (outdated):
 ![](/images/screen-4.jpg?raw=true)
